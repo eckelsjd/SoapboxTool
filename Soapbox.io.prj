@@ -1,0 +1,123 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="C:\Users\eckelsjd\git_projects\SoapboxTool\Soapbox.io.prj" location="C:\Users\eckelsjd\git_projects\SoapboxTool" name="Soapbox.io" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>SoapboxTool</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Joshua Eckels</param.authnamewatermark>
+    <param.email>eckelsjd@rose-hulman.edu</param.email>
+    <param.company>Rose-Hulman Institute of Technology</param.company>
+    <param.summary>Software tool for pre-race soapbox derby tuning optimization</param.summary>
+    <param.description>This tool contains data entry fields to inform the software of changes in race condititions, such as hill profile, driver, or car geometry. The software simulates a soap box derby race and predicts optimal configurations for weight placement and spindle deflections to maximize the car's performance.</param.description>
+    <param.screenshot>${PROJECT_ROOT}\images\Soapbox isometric.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\Rose-Hulman Institute of Technology\SoapboxTool\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\Soapbox.io\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\Soapbox.io\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\Soapbox.io\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\Soapbox.io</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\SoapboxTool.mlapp</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>C:\Users\eckelsjd\Documents\rose_hulman\senior\design\soapbox\app\axle figure.png</file>
+      <file>C:\Users\eckelsjd\Documents\rose_hulman\senior\design\soapbox\app\cg_symbol_line.png</file>
+      <file>C:\Users\eckelsjd\Documents\rose_hulman\senior\design\soapbox\app\front_axle.png</file>
+      <file>C:\Users\eckelsjd\Documents\rose_hulman\senior\design\soapbox\app\front_wheel.png</file>
+      <file>C:\Users\eckelsjd\Documents\rose_hulman\senior\design\soapbox\app\rear_axle.png</file>
+      <file>C:\Users\eckelsjd\Documents\rose_hulman\senior\design\soapbox\app\rear_wheel.png</file>
+      <file>C:\Users\eckelsjd\Documents\rose_hulman\senior\design\soapbox\app\side.png</file>
+      <file>C:\Users\eckelsjd\Documents\rose_hulman\senior\design\soapbox\app\Soapbox isometric.png</file>
+      <file>C:\Users\eckelsjd\Documents\rose_hulman\senior\design\soapbox\app\xcg side 6.png</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\Soapbox.io\for_testing" name="readme.txt" optional="true">C:\Users\eckelsjd\git_projects\SoapboxTool\Soapbox.io\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\Soapbox.io\for_testing" name="SoapboxTool.exe" optional="false">C:\Users\eckelsjd\git_projects\SoapboxTool\Soapbox.io\for_testing\SoapboxTool.exe</file>
+      <file location="${PROJECT_ROOT}\Soapbox.io\for_testing" name="splash.png" optional="false">C:\Users\eckelsjd\git_projects\SoapboxTool\Soapbox.io\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020a</root>
+      <toolboxes>
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
